@@ -1,0 +1,12 @@
+{
+  "name": "flight-booking-cli",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "bun run ./booking-cli.ts",
+    "build:frontend": "bun build frontend/app.ts --outdir frontend/dist --target browser"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}

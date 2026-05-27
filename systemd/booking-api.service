@@ -1,0 +1,14 @@
+[Unit]
+Description=Flight Booking API
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/flight-booking
+ExecStart=/usr/local/bin/flight-booking
+Restart=on-failure
+Environment=API_PORT=8080
+Environment=ALLOWED_ORIGIN=https://your-frontend.example.com
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Flight Booking</h1>
+      <p>Submit a booking for flight <strong>QL101</strong>.</p>
+
+      <form id="booking-form">
+        <label>
+          Seat
+          <input type="text" name="seat" placeholder="14A" required />
+        </label>
+
+        <label>
+          Passenger name
+          <input type="text" name="name" placeholder="Somchai Jaidee" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" placeholder="somchai@example.com" required />
+        </label>
+
+        <label>
+          Phone
+          <input type="tel" name="phone" placeholder="+66812345678" required />
+        </label>
+
+        <button type="submit">Create Booking</button>
+      </form>
+
+      <section id="result" aria-live="polite"></section>
+    </main>
+    <script type="module" src="./dist/app.js"></script>
+  </body>
+</html>

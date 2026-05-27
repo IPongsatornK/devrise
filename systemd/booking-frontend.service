@@ -1,0 +1,12 @@
+[Unit]
+Description=Flight Booking Frontend
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/flight-booking/frontend
+ExecStart=/usr/bin/python3 -m http.server 5173
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
